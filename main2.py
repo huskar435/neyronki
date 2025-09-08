@@ -21,7 +21,7 @@ y = sales
 
 model = LinearRegression()
 model.fit(x,y)
-
+     
 next_week = np.array([[len(sales)]])
 linear_pred = model.predict(next_week)[0]
 print(f"Linear reggression prediction next week: {linear_pred}")
